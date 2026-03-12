@@ -202,6 +202,12 @@ namespace PraktikumADO
 // - Mengikuti naming convention C#
 // ============================================
 
+// ============================================
+// COMMIT 13: Menambahkan komentar di btnConnect
+// - Menjelaskan parameter sender dan e
+// - Menjelaskan fungsi tombol Connect
+// ============================================
+
 
 
 // ============================================
