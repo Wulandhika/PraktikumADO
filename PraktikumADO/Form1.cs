@@ -226,6 +226,11 @@ namespace PraktikumADO
 // - Menjelaskan return value jumlah baris
 // ============================================
 
+// ============================================
+// COMMIT 17: Menambahkan komentar di btnHitungDosen
+// - Dokumentasi Latihan 1
+// - Menjelaskan tujuan praktikum
+// ============================================
 
 
 // ============================================
