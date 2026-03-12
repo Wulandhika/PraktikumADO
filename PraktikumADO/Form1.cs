@@ -201,3 +201,9 @@ namespace PraktikumADO
 // - Fungsi: Menguji koneksi ke database
 // - Menampilkan pesan sukses/gagal
 // ============================================
+
+// ============================================
+// COMMIT 5: Menambahkan tombol Hitung Mahasiswa
+// - Menggunakan ExecuteScalar() untuk COUNT
+// - Menampilkan jumlah di txtHasil
+// ============================================
