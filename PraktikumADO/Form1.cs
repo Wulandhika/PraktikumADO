@@ -232,6 +232,12 @@ namespace PraktikumADO
 // - Menjelaskan tujuan praktikum
 // ============================================
 
+// ============================================
+// COMMIT 18: Menambahkan komentar di btnUpdateMK
+// - Dokumentasi Latihan 2
+// - Menjelaskan query UPDATE SKS
+// ============================================
+
 
 // ============================================
 // COMMIT 3: Menambahkan method Koneksi()
