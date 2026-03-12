@@ -207,3 +207,9 @@ namespace PraktikumADO
 // - Menggunakan ExecuteScalar() untuk COUNT
 // - Menampilkan jumlah di txtHasil
 // ============================================
+
+// ============================================
+// COMMIT 6: Menambahkan tombol Hitung Mata Kuliah
+// - Query SELECT COUNT(*) FROM MataKuliah
+// - Menampilkan hasil di textbox
+// ============================================
