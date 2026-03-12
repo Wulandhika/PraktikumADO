@@ -238,6 +238,12 @@ namespace PraktikumADO
 // - Menjelaskan query UPDATE SKS
 // ============================================
 
+// ============================================
+// COMMIT 19: Menambahkan komentar di btnInsertProdi
+// - Dokumentasi Latihan 3
+// - Menjelaskan query INSERT INTO
+// ============================================
+
 
 // ============================================
 // COMMIT 3: Menambahkan method Koneksi()
