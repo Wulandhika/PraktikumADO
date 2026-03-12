@@ -244,6 +244,12 @@ namespace PraktikumADO
 // - Menjelaskan query INSERT INTO
 // ============================================
 
+// ============================================
+// COMMIT 20: Membersihkan kode
+// - Menghapus spasi tidak perlu
+// - Merapikan format kode
+// ============================================
+
 
 // ============================================
 // COMMIT 3: Menambahkan method Koneksi()
