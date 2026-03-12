@@ -220,6 +220,12 @@ namespace PraktikumADO
 // - Menjelaskan penanganan hasil query
 // ============================================
 
+// ============================================
+// COMMIT 16: Menambahkan komentar di btnUpdate
+// - Menjelaskan perbedaan ExecuteNonQuery
+// - Menjelaskan return value jumlah baris
+// ============================================
+
 
 
 // ============================================
