@@ -208,6 +208,12 @@ namespace PraktikumADO
 // - Menjelaskan fungsi tombol Connect
 // ============================================
 
+// ============================================
+// COMMIT 14: Menambahkan komentar di btnHitungMhs
+// - Menjelaskan cara kerja ExecuteScalar()
+// - Menjelaskan konversi hasil ke int
+// ============================================
+
 
 
 // ============================================
