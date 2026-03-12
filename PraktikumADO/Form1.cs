@@ -173,3 +173,7 @@ namespace PraktikumADO
 // ============================================
 // COMMIT 6: Menambahkan tombol Update Alamat
 // ============================================
+
+// ============================================
+// COMMIT 7: Menambahkan tombol Hitung Dosen (Latihan 1)
+// ============================================
