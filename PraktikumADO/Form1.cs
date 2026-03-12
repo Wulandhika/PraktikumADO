@@ -195,3 +195,9 @@ namespace PraktikumADO
 // - Setup connection string ke database
 // - Menggunakan SQL Server Authentication
 // ============================================
+
+// ============================================
+// COMMIT 4: Menambahkan tombol Connect
+// - Fungsi: Menguji koneksi ke database
+// - Menampilkan pesan sukses/gagal
+// ============================================
