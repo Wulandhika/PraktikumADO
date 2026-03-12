@@ -214,6 +214,12 @@ namespace PraktikumADO
 // - Menjelaskan konversi hasil ke int
 // ============================================
 
+// ============================================
+// COMMIT 15: Menambahkan komentar di btnHitungMK
+// - Menjelaskan query COUNT(*)
+// - Menjelaskan penanganan hasil query
+// ============================================
+
 
 
 // ============================================
