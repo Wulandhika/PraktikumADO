@@ -191,6 +191,14 @@ namespace PraktikumADO
 // ============================================
 
 // ============================================
+// COMMIT 11: Menambahkan try-catch di semua method
+// - Error handling untuk koneksi database
+// - Menampilkan pesan error jika gagal
+// ============================================
+
+
+
+// ============================================
 // COMMIT 3: Menambahkan method Koneksi()
 // - Setup connection string ke database
 // - Menggunakan SQL Server Authentication
