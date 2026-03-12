@@ -181,3 +181,7 @@ namespace PraktikumADO
 // ============================================
 // COMMIT 8: Menambahkan tombol Update SKS (Latihan 2)
 // ============================================
+
+// ============================================
+// COMMIT 9: Menambahkan tombol Insert Prodi (Latihan 3)
+// ============================================
