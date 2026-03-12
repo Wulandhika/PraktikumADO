@@ -16,6 +16,7 @@ namespace PraktikumADO
         }
 
         // Method Koneksi Database
+        // commit 1
         private void Koneksi()
         {
             // GANTI dengan nama server SQL Server kamu!
@@ -79,6 +80,7 @@ namespace PraktikumADO
         }
 
         // ===== TOMBOL UPDATE ALAMAT =====
+     
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
