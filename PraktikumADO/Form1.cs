@@ -213,3 +213,9 @@ namespace PraktikumADO
 // - Query SELECT COUNT(*) FROM MataKuliah
 // - Menampilkan hasil di textbox
 // ============================================
+
+// ============================================
+// COMMIT 7: Menambahkan tombol Update Alamat
+// - Menggunakan ExecuteNonQuery() untuk UPDATE
+// - Menampilkan jumlah baris terpengaruh
+// ============================================
