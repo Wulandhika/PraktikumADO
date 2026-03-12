@@ -196,6 +196,12 @@ namespace PraktikumADO
 // - Menampilkan pesan error jika gagal
 // ============================================
 
+// ============================================
+// COMMIT 12: Memperbaiki penamaan method
+// - Konsistensi penamaan button click
+// - Mengikuti naming convention C#
+// ============================================
+
 
 
 // ============================================
