@@ -6,7 +6,6 @@ namespace PraktikumADO
 {
     public partial class Form1 : Form
     {
-        // Variabel koneksi
         SqlConnection conn;
         SqlCommand cmd;
 
@@ -16,10 +15,8 @@ namespace PraktikumADO
         }
 
         // Method Koneksi Database
-        // commit 1
         private void Koneksi()
         {
-            // GANTI dengan nama server SQL Server kamu!
             conn = new SqlConnection(
                 "Data Source=LAPTOP-07AAA94J\\SQLEXPRESS;Initial Catalog=DBAkademikADO;Integrated Security=True"
             );
@@ -80,7 +77,6 @@ namespace PraktikumADO
         }
 
         // ===== TOMBOL UPDATE ALAMAT =====
-     
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             try
@@ -137,29 +133,73 @@ namespace PraktikumADO
             }
         }
 
-        // ===== LATIHAN 3: INSERT PRODI =====
+        // ===== LATIHAN 3: INSERT PRODI (VERSI OTOMATIS) =====
         private void btnInsertProdi_Click(object sender, EventArgs e)
         {
             try
             {
                 Koneksi();
                 conn.Open();
-                string query = "INSERT INTO ProgramStudi VALUES ('MI01','Manajemen Informatika')";
+
+                // Generate kode prodi baru otomatis
+                string kodeBaru = GenerateKodeProdi();
+
+                string query = "INSERT INTO ProgramStudi (KodeProdi, NamaProdi) VALUES ('" + kodeBaru + "', 'Manajemen Informatika')";
                 cmd = new SqlCommand(query, conn);
                 int hasil = cmd.ExecuteNonQuery();
-                MessageBox.Show("Jumlah baris terpengaruh : " + hasil);
+
+                MessageBox.Show("Berhasil menambahkan data dengan KodeProdi: " + kodeBaru +
+                                "\nJumlah baris terpengaruh: " + hasil);
                 conn.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        // ===== METHOD KHUSUS: GENERATE KODE PRODI BARU =====
+        private string GenerateKodeProdi()
+        {
+            string kodeBaru = "MI01";
+
+            try
+            {
+                // Cek kode terakhir di database yang berawalan 'MI'
+                string query = "SELECT TOP 1 KodeProdi FROM ProgramStudi WHERE KodeProdi LIKE 'MI%' ORDER BY KodeProdi DESC";
+                cmd = new SqlCommand(query, conn);
+                object result = cmd.ExecuteScalar();
+
+                if (result != null && result != DBNull.Value)
+                {
+                    string kodeTerakhir = result.ToString();
+
+                    // Ambil angka dari kode (misal MI01 -> 1, MI02 -> 2)
+                    if (kodeTerakhir.Length >= 4)
+                    {
+                        string angkaStr = kodeTerakhir.Substring(2); // Ambil setelah 'MI'
+                        int angka = int.Parse(angkaStr);
+
+                        // Tambah 1
+                        angka++;
+
+                        // Format jadi MI01, MI02, MI03, MI04, dst
+                        kodeBaru = "MI" + angka.ToString("00");
+                    }
+                }
+            }
+            catch
+            {
+                // Kalau error, pakai default MI01
+                kodeBaru = "MI01";
+            }
+
+            return kodeBaru;
+        }
     }
-}
-// ============================================
-// COMMIT 3: Menambahkan tombol Connect
-// ============================================
+}// ============================================
+ // COMMIT 3: Menambahkan tombol Connect
+ // ============================================
 
 
 // ============================================
