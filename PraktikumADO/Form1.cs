@@ -177,3 +177,7 @@ namespace PraktikumADO
 // ============================================
 // COMMIT 7: Menambahkan tombol Hitung Dosen (Latihan 1)
 // ============================================
+
+// ============================================
+// COMMIT 8: Menambahkan tombol Update SKS (Latihan 2)
+// ============================================
