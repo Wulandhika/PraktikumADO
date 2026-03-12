@@ -189,3 +189,9 @@ namespace PraktikumADO
 // ============================================
 // COMMIT 10: Memperbaiki komentar dan dokumentasi
 // ============================================
+
+// ============================================
+// COMMIT 3: Menambahkan method Koneksi()
+// - Setup connection string ke database
+// - Menggunakan SQL Server Authentication
+// ============================================
